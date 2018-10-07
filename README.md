@@ -52,12 +52,18 @@ Part 6:
 The expected value of the function is 0. If the computations are exact, the function adds the
 fraction 1/n to itself n times then subtracts 1. The sum of the fractions adds up to be 1 given 
 the structure of function. The final difference returns 1-1, which is 0.
-In reality, some values of n returned 0 as expect; however, there are some values that returned
-decimals either greater than or less than 0.
+In reality, some values of n returned 0 as expected; however, there are some values that returned
+decimals either greater than or less than 0. This is an issue with the precision of variable 
+types. There exist fractions that binary values simply cannot represent exactly, though they can 
+give very close approximations. As such, the function occaisionally subtracted 1 from a value 
+greater than 1/less than 1, resulting the incorrect return values.
 
 Part 7:
 The code block in this part unexpectedly prints up to (and including) i = 4.4. The for-loop should 
-terminate as soon as i = 4.4; evidently, that was not the case.
+terminate as soon as i = 4.4; evidently, that was not the case. This is another problem with type 
+precision. The machine simply assigns a decimal point to i that is incorrectly rounded. With float
+types, 4.4 is not necessaryily stored as 4.4; rather, it is stored as a value minutely less than 4.4.
+Thus, the code block extends further than expected.
 
 Part 8:
 The code block in this part behaves exactly as it should. The for-loop terminates when it is 
