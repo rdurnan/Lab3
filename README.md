@@ -7,9 +7,9 @@ in a for-loop.
 Jagadish (TA) helped me figure out how to determine overflow in parts 4 and 5.
 
 Part 1:
-n = 1, sum = 1
-n = 3, sum = 3
-n = 5, sum = 15
+n = 1, sum = 1;
+n = 3, sum = 3;
+n = 5, sum = 15;
 n = 10, sum = 55
 
 Part 2:
@@ -19,17 +19,17 @@ overflows with an extra carry; consequently, the entire sum becomes negative.
 The function in this part causes overflow when n = 256.
 
 Part 3:
-n = 1, sum = 1
-n = 3, sum = 3
-n = 5, sum = 15
+n = 1, sum = 1;
+n = 3, sum = 3;
+n = 5, sum = 15;
 n = 10, sum = 55
 
 The function in this part causes overflow when n = 65536
 
 Part 4:
-n = 1, product = 1
-n = 3, product = 6
-n = 5, product = 120
+n = 1, product = 1;
+n = 3, product = 6;
+n = 5, product = 120;
 n = 10, product = 3628800
 
 You can detect overflow in the process of computing the product of consecutive numbers by
@@ -38,9 +38,9 @@ variable types. As soon as the two values no longer match, you know an overflow 
 The function in this part causes overflow when n = 14.
 
 Part 5:
-n = 1, product = 1
-n = 3, product = 6
-n = 5, product = 120
+n = 1, product = 1;
+n = 3, product = 6;
+n = 5, product = 120;
 n = 10, product = 3628800
 
 To find overflow with the function in this part, another method was necessary. Using the 
