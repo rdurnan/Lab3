@@ -67,4 +67,6 @@ Thus, the code block extends further than expected.
 
 Part 8:
 The code block in this part behaves exactly as it should. The for-loop terminates when it is 
-supposed to, and i only prints up to (and including) i = 4.2.
+supposed to, and i only prints up to (and including) i = 4.2. While double variables have to store
+approxiamted values in the same manner as floats, doubles are still capable of rounding more accurately
+to true values. As such, the for-loop was able to terminate at the right time.
