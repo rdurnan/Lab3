@@ -49,3 +49,16 @@ value returned by my function is infinite (as determined by isinf), then an over
 The function in this part causes overflow when n = 171.
 
 Part 6:
+The expected value of the function is 0. If the computations are exact, the function adds the
+fraction 1/n to itself n times then subtracts 1. The sum of the fractions adds up to be 1 given 
+the structure of function. The final difference returns 1-1, which is 0.
+In reality, some values of n returned 0 as expect; however, there are some values that returned
+decimals either greater than or less than 0.
+
+Part 7:
+The code block in this part unexpectedly prints up to (and including) i = 4.4. The for-loop should 
+terminate as soon as i = 4.4; evidently, that was not the case.
+
+Part 8:
+The code block in this part behaves exactly as it should. The for-loop terminates when it is 
+supposed to, and i only prints up to (and including) i = 4.2.
